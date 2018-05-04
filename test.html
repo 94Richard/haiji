@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewpor" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <style>
+    *{
+			margin: 0;
+			padding: 0;
+		}
+		#left {
+			background-color: green;
+			float: left;
+			width: 220px;
+			margin-right: -100%;
+		}
+		
+		#content {
+			float: left;
+			width: 100%;
+      margin-left: 220px;/*==等于左边栏宽度值==*/
+			background-color: orange;
+		}
+		
+		#contentInner {
+			
+		}
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #000;
+    }
+  </style>
+  <link rel="stylesheet" href="main.css" >
+</head>
+<body>
+
+    <div id="left">
+			Left Sidebar
+		</div>
+		<div id="content">
+			<div id="contentInner">
+				Main Content
+			</div>
+		</div>
+  <div class="circle"></div>
+
+
+</body>
+</html>

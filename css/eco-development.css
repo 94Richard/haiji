@@ -1,0 +1,209 @@
+#main {
+  position: relative;
+}
+.main-left {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  border: solid #555;
+  border-width: 0 2px 0 2px;
+}
+.main-left .nav-list p {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #555;
+  margin-bottom: 5px;
+  background: #e4396c;
+  font-size: 22px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.main-left .nav-list li {
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: -1px;
+  padding-left: 10px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  font-size: 18px;
+}
+.aside-ads {
+  margin-top: 5px;
+}
+.aside-ads .part-1 li {
+  margin-top: -1px;
+  padding: 10px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.part-1 li h1 {
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+.part-1 img {
+  width: 200px;
+  height: 150px;
+  margin: 10px auto;
+}
+.part-1 li h2 {
+  margin-top: 15px;
+}
+.part-2 {
+  border-bottom: 1px solid #555;
+}
+.part-2 h1 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 20px 0;
+}
+.part-2 li {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.part-2 .circle{
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid #555;
+  border-radius: 50%;
+}
+.part-2 p {
+  height: 50px;
+  line-height: 50px;
+  margin: 0 20px 40px 20px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  
+}
+.part-3 {
+  margin-top: 5px;
+  border-top: 1px solid #555;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.part-3 h1 {
+  margin: 20px auto;
+  font-size: 26px;
+  font-weight: bold;
+}
+.main-right { 
+  margin-left: 280px;
+  margin-top: -6px;
+  border-right: 2px solid #555;
+  border-left: 2px solid #555;
+}
+.project-title {
+  height: 100px;
+  margin-top: 5px;
+  border: solid #555;
+  border-width: 2px 0;
+}
+.project-intro {
+  margin-top: -1px;
+  padding: 5px; 
+  border: solid #555;
+  border-width: 1px 0;
+}
+.project-intro h1 {
+  font-size: 16px;
+  font-weight: 700; 
+  position: relative;
+}
+.project-intro h1::after {
+  content: '';
+  width: 80px;
+  height: 2px;
+  border: solid #000;
+  border-width: 1px 1px 1px 0px;
+  position: absolute;
+  bottom: -3px;
+  left: -5px;
+}
+.project-intro p {
+  padding: 5px; 
+  font-size: 14px;
+  text-indent: 2rem;    
+}
+.project-image {
+  height: 305px;
+  border-bottom: 1px solid #555;
+}
+.project-image img {
+  width: 456px;
+  height: 150px;
+}
+.project-message {
+  border-bottom: 1px solid #555;
+  padding-top: 5px;
+}
+.project-message>div {
+  border-top: 1px solid #555;
+}
+.project-message span {
+  position: relative;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.project-message span::after {
+  content: '';
+  width: 120px;
+  height: 2px;
+  border: solid #000;
+  border-width: 1px 1px 1px 0;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+}
+.more {
+  float: right;
+  width: 60px;
+  margin-top: 4px;
+  margin-right: 30px;
+  padding-left: 30px;
+}
+.project-message ul {
+  float: left;
+  width: 50%;
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+.project-message li {
+  height: 45px;
+  padding-left: 20px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.message-first {
+  border-right: 1px solid #000;
+}
+.project-text {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #555;
+  font-size: 16px;
+  text-align: center;
+}
+.project-para {
+  margin-top: 5px; 
+  padding: 5px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  font-size: 14px;
+  text-indent: 2em;
+
+}

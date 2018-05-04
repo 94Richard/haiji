@@ -1,0 +1,119 @@
+
+
+/* main */
+#main {
+  position: relative;
+  overflow: hidden;
+  min-height: 235px;
+}
+.main-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  border-left: 2px solid #555;
+  border-right: 2px solid #555;
+  padding:10px;
+}
+.main-left li {
+  border: 1px solid #555;
+  border-bottom: none;
+  text-align: center;
+  line-height: 24px;
+}
+.main-left li:last-child {
+  border-bottom: 1px solid #555;
+}
+.main-left li.selected {
+  background: #D93600;
+  color: #fcfcfc;
+}
+.main-left li.selected a {
+  color: #fcfcfc;
+}
+.main-left li a {
+  font-weight: bold;
+  font-size: 14px;
+}
+.main-left li:hover {
+  background: #D93600;
+}
+.main-left li:hover a {
+  color:#fcfcfc;
+}
+.main-center {
+  width: 800px;
+  margin-left: 100px;
+}
+.main-center .title {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.intro p {
+  border-top: 1px dashed #555;
+  border-bottom: 1px dashed #555;
+  text-indent: 24px;
+  padding:5px;
+
+}
+.intro-details li {
+  padding-left: 10px;
+  border-bottom: 1px dashed #555;
+}
+.intro-details h2 {
+  font-size: 18px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.intro-details p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.intro-details em {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.main-center .map {
+  height: 200px;
+  border-bottom: 1px solid #555;
+}
+.main-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  border-right:2px solid #555;
+  border-left:2px solid #555;
+}
+.main-right .spike {
+  border-bottom :1px solid #555;
+  margin-bottom: 20px;
+}
+.main-right .preferred {
+  border-top :1px solid #555;
+  border-bottom :1px solid #555;
+  margin-bottom: 20px;
+}
+.main-right .recommand {
+  border-top :1px solid #555;
+  border-bottom :1px solid #555;
+}
+.main-right .activity-title {
+  height: 35px;
+  padding-left: 5px;
+  line-height: 35px;
+  border-bottom: 1px solid #555;
+}
+.activity-title span {
+  font-size: 16px;
+  padding-left: 25px;
+
+}
+.main-right>div {
+  height: 300px;
+}
