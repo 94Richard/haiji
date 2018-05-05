@@ -12,44 +12,41 @@
   height: 100%;
   border-left: 2px solid #555;
   border-right: 2px solid #555;
-}
-.main-left li {
-  border-bottom: 1px solid #555;
+  color: #fcfcfc;
 }
 .course-tab-top li {
+  margin-top: -1px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
   line-height: 30px;
+}
+.course-tab-top li a {
+  display: block;
   text-align: center;
   font-size:18px;
   letter-spacing: .5em;
   text-indent: .5em;
-
 }
-.main-left li:last-child {
+.course-tab-top li a:hover {
+  color: #fff;
+}
+.main-left h1.course-all {
+  margin-bottom: 5px;
   border-bottom: 1px solid #555;
-}
-.main-left li.selected {
   background: #D93600;
-  color: #fcfcfc;
-}
-.main-left li.selected a {
-  color: #fcfcfc;
-}
-.course-tab-top li:first-child {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1em;
   text-indent: 1em;
 }
 .course-tab-top li:hover {
-  background: #D93600;
-}
-.course-tab-top li:hover a {
-  color:#fcfcfc;
+  background: orange;
 }
 .course-tab-bottom {
   margin-top: 5px;
   padding-bottom: 5px;
-
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
 }
 .course-tab-bottom .title {
   text-align: center;
@@ -109,6 +106,7 @@
 .course-top {
   overflow: hidden;
   height: 250px;
+  border-bottom: 1px solid #555;
 }
 .activity-video {
   float: left;
@@ -157,10 +155,13 @@
 .course-intro {
   height:150px;
   margin-bottom: 10px;
+  border-bottom: 1px solid #555;
 }
 .course-tool {
   overflow: hidden;
-  height: 140px
+  height: 140px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
 }
 .course-bottom h1 {
   position: relative;
@@ -185,7 +186,6 @@
 }
 .course-tool li {
   margin-right: 120px;
-
 }
 .circle {
   display: inline-block;
@@ -207,6 +207,7 @@
 .course-find {
   height: 380px;
   overflow: hidden;
+  border-bottom: 1px solid #555;
 }
 .course-find>div {
   width: 50%;
@@ -256,6 +257,7 @@
 }
 .tieba-header {
   height: 50px;
+  border-bottom: 1px solid #555;
 }
 .tieba-btn a {
   display: inline-block;

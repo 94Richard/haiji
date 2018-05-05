@@ -70,8 +70,9 @@ a:hover {
 .bold {
   font-weight: 700;
 }
-.clear {
-  clear: both;
+.clear::before {
+  content: '';
+  display: table;
 }
 .clearfix::after {
   content: " ";
@@ -79,42 +80,6 @@ a:hover {
   height: 0;
   clear: both;
   visibility: hidden;
-}
-.bb {
-  border-bottom: 1px solid #555;
-}
-.bbt {
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #555;
-}
-/* public-top */
-.public-top-layout {
-  width: 100%;
-  font-family: Arial, 宋体;
-  color: #777;
-  background-color: #f5f1ff;
-  border-bottom: 1px solid #dfdaea;
-}
-.topbar {
-  height: 32px;
-}
-.user-entry {
-  float: left;
-  width: 40%;
-  height: 32px;
-  line-height: 32px;
-}
-.user-entry a {
-  color: #333;
-}
-.top-menu {
-  float: right;
-}
-.top-menu li {
-  width: 90px;
-  height: 32px; 
-  line-height: 32px;
-  float: left;
 }
 /* header */
 header {
@@ -135,7 +100,6 @@ header>.logo {
   height: 76px;
   overflow: hidden;
   background:  url() 0 0 no-repeat;
-
 }
 .h-title {
   float: left;
@@ -192,7 +156,7 @@ header>.logo {
 }
 #banner .indicator {
   position: absolute;
-  width: 400px;
+  width: 200px;
   right:0;
   bottom:20px;
   text-align: center;

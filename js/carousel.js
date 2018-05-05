@@ -18,7 +18,7 @@ $(function(){
       }
   }
 
-  timer=setInterval(slideNext,3000);
+  timer=setInterval(slideNext,5000);
 
   //当鼠标移入banner时，清除定时器
   $("#banner").mouseover(function(){
@@ -37,3 +37,4 @@ $(function(){
       cur=now;//为变量cur重新赋值，以便于再次启用定时器的时候，从当前显示的图片开始播放
   });
 })  
+
