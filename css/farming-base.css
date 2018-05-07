@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  margin:0;
+  margin: 0;
   min-width: 1200px;
   background: #fff;
   font: 12px/1.5 "Hiragino Sans GB","Microsoft Yahei",arial,宋体,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
@@ -10,8 +10,8 @@ body {
 }
 article, aside, dialog, footer, header, section, footer, nav, figure, menu { display:block; }
 ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,button {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 address,caption,cite,code,em,h1,h2,h3,h4,h5,h6,pre,strong,table,td,th {
 	font-size: 1em;
@@ -22,7 +22,7 @@ strong {
 	font-weight: 700
 }
 em,i,u,b {
-  font-style :normal;
+  font-style: normal;
 }
 ul,ol {
   list-style: none;
@@ -47,7 +47,7 @@ a:hover {
 .bold {
   font-weight: 700;
 }
-.clearfox::before{
+.clearfix::before {
   content: " ";
   display: table;
 }
@@ -125,17 +125,8 @@ a:hover {
 .ico_service {
   background-position: -60px -15px;
 }
-.dropdown:hover .ico_shop {
-  background-position: -15px -30px;
-}
-.dropdown:hover .ico_order {
-  background-position: -30px -30px;
-}
-.dropdown:hover .ico_store {
-  background-position: -45px -30px;
-}
-.dropdown:hover .ico_service {
-  background-position: -60px -30px;
+.dropdown:hover .icon>em {
+  background-position-y: -30px;
 }
 .dropdown:hover i {
   transform: rotate(180deg);
@@ -171,7 +162,7 @@ a:hover {
 } 
 header {
   height: 120px;
-  font-size:14px;
+  font-size: 14px;
 }
 header>.logo {
   border: 1px solid #eee;
@@ -186,7 +177,7 @@ header>.logo {
   width: 206px;
   height: 76px;
   overflow: hidden;
-  background:  url() 0 0 no-repeat;
+  background: url() 0 0 no-repeat;
 }
 .h-title {
   float: left;
@@ -216,9 +207,9 @@ header>.logo {
 }
 #public-nav-layout ul {
   float: left;
-  margin-left: 150px;
+  margin-left: 200px;
 }
-#public-nav-layout li{
+#public-nav-layout li {
   position: relative;
   float: left;
 }
@@ -231,16 +222,19 @@ header>.logo {
   color: #e6c6ff;
   transition: color .3s ease-in;
 }
-#public-nav-layout li:hover::before {
+#public-nav-layout li.active a {
+  color: #e6c6ff;
+}
+#public-nav-layout li.active a::before {
   content: '';
   position: absolute;
   left: 50%;
   width: 0;
   height: 0;
-  margin-left: -10px;
-  border-width: 10px 10px 10px 10px;
+  margin-left: -8px;
+  border-width: 8px;
   border-style: solid dashed dashed dashed;
-  border-color: #fff transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;  
 }
 #public-nav-layout li::after {
   content: '';
@@ -255,7 +249,7 @@ header>.logo {
   position: absolute;
   left: 0;
   top: 0;
-  width: 150px;
+  width: 200px;
   height: 100%;
   border-left: 2px solid #555;
   border-right: 2px solid #555;
@@ -265,6 +259,8 @@ header>.logo {
   line-height: 40px;
   border-bottom: 1px solid #555;
   font-size: 20px;
+  letter-spacing: 5px;
+  text-indent: 5px;
   text-align: center;
   color: #fff;
   font-weight: bold;
@@ -272,7 +268,8 @@ header>.logo {
 }
 .main-left ul {
   margin-top: 5px;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom:  1px solid #555;
 }
 .main-left li {
   height: 40px;
@@ -286,12 +283,92 @@ header>.logo {
   height: 38px;
   line-height: 38px;
   font-size: 20px;
+  letter-spacing: 10px;
+  text-indent: 10px;
   text-align: center;
 }
 .main-left a:hover {
-  background: orange;
+  background: #9737DF;
   color: #fff;
 }
 .main-right {
+  margin-left: 200px;
   height: 2000px;
+}
+#banner {
+  height: 300px;
+  position: relative;
+}
+#banner li {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+.link {
+  display: block;
+  width: 100%;
+  height: 100%; 
+}
+#banner .indicator {
+  position: absolute;
+  width: 400px;
+  right: 100px;
+  bottom: 10px;
+  text-align: center;
+  z-index: 20;
+}
+#banner .indicator a {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 5px;
+}
+#banner .indicator a.cur {
+  background: #c81623;
+}
+.main-menu {
+  padding: 0 10px 10px 10px;
+  border-right: 1px solid #555;
+  border-left: 1px solid #555;
+  overflow: hidden;
+}
+.main-menu>.more>a {
+  float: right;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 10px;
+}
+.main-menu>.more i {
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url() 0 0 no-repeat;
+}
+.video-group {
+  border-bottom: 1px solid #555;
+  height: 450px;
+}
+.video-live {
+  float: left;
+  width: 350px;
+  height: 500px;
+}
+.video-live video {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px; 
+}
+.video-live>div {
+  position: relative;
+}
+.video-live .mask {
+  width: 350px; 
+  height: 200px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
 }
