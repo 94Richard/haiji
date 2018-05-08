@@ -83,7 +83,7 @@
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 5px;
-  
+
 }
 .part-3 {
   margin-top: 5px;
@@ -97,7 +97,7 @@
   font-size: 26px;
   font-weight: bold;
 }
-.main-right { 
+.main-right {
   margin-left: 280px;
   margin-top: -6px;
   border-right: 2px solid #555;
@@ -111,13 +111,13 @@
 }
 .project-intro {
   margin-top: -1px;
-  padding: 5px; 
+  padding: 5px;
   border: solid #555;
   border-width: 1px 0;
 }
 .project-intro h1 {
   font-size: 16px;
-  font-weight: 700; 
+  font-weight: 700;
   position: relative;
 }
 .project-intro h1::after {
@@ -131,16 +131,17 @@
   left: -5px;
 }
 .project-intro p {
-  padding: 5px; 
+  padding: 5px;
   font-size: 14px;
-  text-indent: 2rem;    
+  text-indent: 2rem;
 }
 .project-image {
-  height: 305px;
+  height: 301px;
   border-bottom: 1px solid #555;
+  font-size: 0;
 }
 .project-image img {
-  width: 456px;
+  width: 50%;
   height: 150px;
 }
 .project-message {
@@ -176,8 +177,8 @@
 .project-message ul {
   float: left;
   width: 50%;
-  margin-top: 10px; 
-  margin-bottom: 10px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .project-message li {
   height: 45px;
@@ -199,7 +200,7 @@
   text-align: center;
 }
 .project-para {
-  margin-top: 5px; 
+  margin-top: 5px;
   padding: 5px;
   border-top: 1px solid #555;
   border-bottom: 1px solid #555;

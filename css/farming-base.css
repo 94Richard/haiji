@@ -106,7 +106,7 @@ a:hover {
 }
 .icon i {
   position: absolute;
-  width: 6px; 
+  width: 6px;
   height: 3px;
   top: 15px;
   right: 4px;
@@ -156,10 +156,10 @@ a:hover {
 }
 .dropdown-layer a:hover {
   background: #f7f7f7;
-} 
+}
 .top-menu li a {
   color: #777;
-} 
+}
 header {
   height: 120px;
   font-size: 14px;
@@ -234,7 +234,7 @@ header>.logo {
   margin-left: -8px;
   border-width: 8px;
   border-style: solid dashed dashed dashed;
-  border-color: #fff transparent transparent transparent;  
+  border-color: #fff transparent transparent transparent;
 }
 #public-nav-layout li::after {
   content: '';
@@ -293,7 +293,7 @@ header>.logo {
 }
 .main-right {
   margin-left: 200px;
-  height: 2000px;
+  border-right: 2px solid #555;
 }
 #banner {
   height: 300px;
@@ -309,7 +309,7 @@ header>.logo {
 .link {
   display: block;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 #banner .indicator {
   position: absolute;
@@ -331,9 +331,7 @@ header>.logo {
   background: #c81623;
 }
 .main-menu {
-  padding: 0 10px 10px 10px;
-  border-right: 1px solid #555;
-  border-left: 1px solid #555;
+  margin: 0 10px 10px 10px;
   overflow: hidden;
 }
 .main-menu>.more>a {
@@ -350,25 +348,76 @@ header>.logo {
 }
 .video-group {
   border-bottom: 1px solid #555;
-  height: 450px;
 }
 .video-live {
   float: left;
   width: 350px;
-  height: 500px;
+  height: 350px;
 }
 .video-live video {
   width: 350px;
   height: 200px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
-.video-live>div {
+.video-container  {
   position: relative;
 }
-.video-live .mask {
-  width: 350px; 
-  height: 200px;
-  border-radius: 10px;
+.btn-play p {
+  float: right;
+  margin: 10px 10px 0 0;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #c81623;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #000;
+}
+.video-group .btn-play {
   position: absolute;
+  left: 0;
+  top: 0;
   z-index: 10;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.video-live .btn-play {
+  border-radius: 10px;
+}
+.video-container b {
+  position: absolute;
+  z-index: 100;
+  right: 25%;
+  top: 25%;
+  width: 150px;
+  height: 100px;
+  background: url(../img/play-bj.png) center center no-repeat;
+}
+.mask {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+.video-review {
+  height: 352px;
+  margin-left: 355px;
+  border-right: 1px solid #555;
+  font-size: 0;
+}
+.video-review .video-container {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  border-left: 1px solid #555;
+  border-top: 1px solid #555;
+}
+.video-review video {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

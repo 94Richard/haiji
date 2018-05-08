@@ -111,7 +111,7 @@
         <li class="active"><a href="">首页</a></li>
         <li><a href="">三品一标</a></li>
         <li><a href="">众筹定制</a></li>
-        <li><a href="">农资农具</a></li>  
+        <li><a href="">农资农具</a></li>
         <li><a href="">农旅民宿</a></li>
         <li><a href="">农村公益</a></li>
         <li><a href="">消费扶贫</a></li>
@@ -166,22 +166,52 @@
           <a href="">
             <i></i>
             <span>更多</span>
-          </a> 
+          </a>
         </div>
-        <div class="video-group">
+        <div class="video-group clearfix">
           <div class="video-live">
-            <div>
-              <video id="video" src="https://jdvod.jcloudcache.com/vodtransgzp1251412368/9031868223042282529/f0.f30.mp4?dockingId=b6296bd8-59a3-4e89-ac72-e77b88bfdf72&storageSource=2">您的浏览器不支持.ogg格式视频！</video>
-              <div class="mask">
+            <div class="video-container">
+              <video src="https://jdvod.jcloudcache.com/vodtransgzp1251412368/9031868223042282529/f0.f30.mp4?dockingId=b6296bd8-59a3-4e89-ac72-e77b88bfdf72&storageSource=2">您的浏览器不支持.ogg格式视频！</video>
+              <div class="btn-play">
                 <p>直播</p>
-                <img src="img/naice_3.png">
+                <b></b>
               </div>
-            </div> 
+              <div class="mask"></div>
+            </div>
             <div class="title"></div>
             <div class="notice"></div>
           </div>
           <div class="video-review">
-
+            <div class="video-container">
+              <video src="https://jdvod.jcloudcache.com/vodtransgzp1251412368/9031868223042282529/f0.f30.mp4?dockingId=b6296bd8-59a3-4e89-ac72-e77b88bfdf72&storageSource=2"></video>
+              <div class="btn-play">
+                <p>精彩回顾</p>
+                <b></b>
+              </div>
+              <div class="mask"></div>
+            </div>
+            <div class="video-container">
+              <video src="https://jdvod.jcloudcache.com/vodtransgzp1251412368/9031868223042282529/f0.f30.mp4?dockingId=b6296bd8-59a3-4e89-ac72-e77b88bfdf72&storageSource=2" poster="img/naice_3.png"></video>
+              <div class="btn-play">
+                <p>精彩回顾</p>
+                <b></b>
+              </div>
+            </div>
+            <div class="video-container">
+              <video src="https://jdvod.jcloudcache.com/vodtransgzp1251412368/9031868223042282529/f0.f30.mp4?dockingId=b6296bd8-59a3-4e89-ac72-e77b88bfdf72&storageSource=2"></video>
+              <div class="btn-play">
+                <p>精彩回顾</p>
+                <b></b>
+              </div>
+              <div class="mask"></div>
+            </div>
+            <div class="video-container">
+              <video src="https://jdvod.jcloudcache.com/vodtransgzp1251412368/9031868223042282529/f0.f30.mp4?dockingId=b6296bd8-59a3-4e89-ac72-e77b88bfdf72&storageSource=2"></video>
+              <div class="btn-play">
+                <p>精彩回顾</p>
+                <b></b>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -194,7 +224,14 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/carousel.js"></script>
   <script>
-    
+    var btn = document.querySelector(".btn-play b");
+    var video = document.querySelector('.video-group video');
+    // var btn-play = document.querySelector('.btn-play');
+    $(".btn-play b").click(function() {
+        console.log($(this));
+
+    })
+
   </script>
 </body>
 </html>
